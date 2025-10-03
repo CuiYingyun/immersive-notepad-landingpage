@@ -3,28 +3,22 @@ import { Icon } from "astro-icon/components";
 import ContentSection from "~/components/content-section.astro";
 ---
 
-<ContentSection title="Just ship less" id="intro">
-  <Icon slot="eyebrow" name="logomark" class="size-32" />
+<ContentSection title="The Perfect LLM Companion" id="intro">
+  <Icon slot="eyebrow" name="mdi:notebook-edit-outline" class="size-32" />
   <Fragment slot="lead">
-    Astro is a new kind of site builder for the
-    <span class="text-primary">modern</span> web.
-    <span class="text-primary">Lightning-fast</span>
-    performance meets <span class="text-primary">powerful</span> developer experience.
+    Immersive Notepad is designed for the <span class="text-primary">LLM era</span>.
+    Craft complex prompts in a <span class="text-primary">distraction-free</span> environment,
+    organize content across <span class="text-primary">three perfectly-sized</span> notepads,
+    and seamlessly transfer them to ChatGPT or any LLM tool.
+    <span class="text-primary">Less is more</span> - three notepads are all you need.
   </Fragment>
-  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+  <div class="grid grid-cols-1 gap-2">
     <a
-      href="https://docs.astro.build/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+      href="#"
+      class="flex items-center justify-center gap-3 border-2 border-purple-500 bg-purple-600 hover:bg-purple-700 px-6 py-4 transition-colors"
     >
-      <Icon name="mdi:telescope" class="size-8" />
-      <span>Read the docs</span>
-    </a>
-    <a
-      href="https://astro.new/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-    >
-      <Icon name="mdi:rocket" class="size-8" />
-      <span>Try it out</span>
+      <Icon name="mdi:download" class="size-8" />
+      <span>Install Chrome Extension</span>
     </a>
   </div>
 </ContentSection>

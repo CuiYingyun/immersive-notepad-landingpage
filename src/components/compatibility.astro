@@ -3,87 +3,68 @@ import CompatibilityList from "~/components/compatibility-list.astro";
 import ContentSection from "~/components/content-section.astro";
 import type { CompatibilityItem } from "~/types";
 
-const frameworks: Array<CompatibilityItem> = [
+const browsers: Array<CompatibilityItem> = [
   {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
+    title: "Chrome",
+    icon: "mdi:google-chrome",
+    url: "https://www.google.com/chrome/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
-  },
-  {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
-  },
-  {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
+    title: "Edge",
+    icon: "mdi:microsoft-edge",
+    url: "https://www.microsoft.com/edge",
   },
 ];
 
-const platforms: Array<CompatibilityItem> = [
+const features: Array<CompatibilityItem> = [
   {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
+    title: "Dark Mode",
+    icon: "mdi:theme-light-dark",
+    url: "#",
   },
   {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
+    title: "Local Storage",
+    icon: "mdi:database",
+    url: "#",
   },
   {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
+    title: "Privacy First",
+    icon: "mdi:shield-lock",
+    url: "#",
   },
   {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
+    title: "Keyboard Shortcuts",
+    icon: "mdi:keyboard",
+    url: "#",
   },
   {
-    title: "GitHub",
-    icon: "fa-brands:github",
-    url: "https://pages.github.com/",
+    title: "Word Count",
+    icon: "mdi:counter",
+    url: "#",
   },
   {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
+    title: "Auto Save",
+    icon: "mdi:content-save-check",
+    url: "#",
   },
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Browser Support" id="compatibility">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
+    Currently supports <span class="text-primary">Chrome</span> and
+    <span class="text-primary">Edge</span> browsers.
+    Built with <span class="text-primary">privacy</span> and
+    <span class="text-primary">performance</span> in mind.
   </Fragment>
   <CompatibilityList
-    items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
+    items={browsers}
+    title="Supported Browsers"
+    url="#"
   />
   <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
+    items={features}
+    title="Key Features"
+    url="#features"
   />
 </ContentSection>
