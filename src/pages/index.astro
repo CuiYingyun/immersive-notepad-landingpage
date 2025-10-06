@@ -5,6 +5,7 @@ import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
+import Letter from "~/components/letter.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
@@ -68,6 +69,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       <Intro />
       <Features />
       <Showcase />
+      <Letter />
     </div>
     <Footer />
   </body>
