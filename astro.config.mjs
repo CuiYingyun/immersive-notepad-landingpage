@@ -4,7 +4,6 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://cuiyingyun.github.io",
-  base: "/immersive-notepad-landingpage",
+  site: "https://immersive-notepad.caveman.work",
   integrations: [tailwind(), icon()],
 });
